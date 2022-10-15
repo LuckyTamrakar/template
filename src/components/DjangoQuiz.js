@@ -4,14 +4,14 @@ import { useDjangoQuizQuery } from '../Services/userAuthApi'
 import { useDispatch } from 'react-redux';
 import { setUserToken } from '../Features/AuthSlice';
 
-import { RadioGroup,Typography,Checkbox,FormControlLabel, Box ,Alert,AlertTitle} from '@mui/material';
+import { Box ,Alert,AlertTitle} from '@mui/material';
 import Navbar from './Navbar';
 import { Link, useParams } from 'react-router-dom';
 import { getToken } from '../Services/LocalServices';
 function DjangoQuiz() {
     const {quiz}=useParams()
     
-    const {data,isSuccess}=useDjangoQuizQuery(quiz)
+    const {data}=useDjangoQuizQuery(quiz)
     const [userData,setUserData]=useState({data:[]})
     const [answerCheck, setAnswerCheck] = useState()
     const dispatch = useDispatch()
@@ -28,7 +28,7 @@ function DjangoQuiz() {
         
       }
   },[data])
-  const a=userData.data.flatMap((q)=>q)
+  //const a=userData.data.flatMap((q)=>q)//
   //console.log(a)
   const b=userData.data.flatMap((q)=>q.answer)
   const ac=b.length
@@ -52,7 +52,7 @@ function DjangoQuiz() {
     if(Object.keys(answer).length===0){
       setAnswer(createInitialAnswer())
     }
-  },[answer])
+  },[answer]);
   //console.log(answer)
   const checkAnswer=(e)=>{
     e.preventDefault()
@@ -153,7 +153,7 @@ function DjangoQuiz() {
 </div>
       </>
   )
-   {/* {userData.data.map(({quiz,title,answer},i)=>(
+   /* {userData.data.map(({quiz,title,answer},i)=>(
        <div key={i}>
        <Typography component="h1" variant="h5">
          {title}
@@ -178,7 +178,7 @@ function DjangoQuiz() {
     ))}
    
   
-    </React.Fragment>*/}
+    </React.Fragment>*/
   
 }
 

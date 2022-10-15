@@ -33,7 +33,7 @@ function PatientAppointment() {
       setServerError({})
       setServermsg(res.data)
       document.getElementById('contact-form').reset()
-      window.location.reload()
+      if(!alert('Appointment booking successfully')){window.location.reload();}
     }
   }
     
