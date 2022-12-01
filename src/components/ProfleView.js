@@ -76,7 +76,7 @@ function ProfleView() {
       desc:data.get('desc')
     }
     const res=await patientAppointment({actualData,email})
-    console.log(res)
+    //console.log(res)
     if(res.error){
       //console.log(res.error.data)
       setServerError(res.error.data)
@@ -112,7 +112,7 @@ function ProfleView() {
                     <h6>Email : {email}</h6>
                     <h6>Name : {name}</h6>
                     <h6>Date : {date}</h6>
-                    <h6>Time : {time}</h6>
+                    {time>12 ? <h6>Time : {time}pm</h6>:<h6>Time : {time}am</h6>}
                     <h6>Desc : {desc}</h6>
                 </div>
             ))}

@@ -123,7 +123,7 @@ function DjangoQuiz() {
           
           {answer.map(({ answer_text, id }) => (
               <div className="form-check">
-              <input className="form-check-input text-center" type="checkbox" value={id} id="flexCheckDefault" onChange={handleSelection}/>
+              <input className="form-check-input text-center" type="checkbox" key={id} value={id} id="flexCheckDefault" onChange={handleSelection}/>
               <label className="form-check-label" htmlFor="flexCheckDefault">
                 {answer_text}
               </label>

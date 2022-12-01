@@ -68,6 +68,8 @@ function Login() {
 </div>
 <NavLink to='/forgot-password' > Forgot Password ?</NavLink>
 <br/>
+<NavLink to='/otp' > Account Verify ?</NavLink>
+<br/>
 <NavLink to='/register' > Don't have account ? Sign up</NavLink>
 
             </div>

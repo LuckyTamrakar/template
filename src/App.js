@@ -24,6 +24,7 @@ import QuizExam from './components/QuizExam';
 import PatientAppointment from './components/PatientAppointment';
 import DoctorApoointment from './components/DoctorAppointment';
 import ProfleView from './components/ProfleView';
+import VerifyOtp from './components/VerifyOtp';
 
 function App() {
   const {access_token}=useSelector(state=>state.auth)
@@ -43,6 +44,7 @@ function App() {
             <Route path="/forgot-password" element={<SendResetMail/>} />
             <Route path="/quiz-exam/:quiz" element={<DjangoQuiz/>} />
             <Route path="/quiz-exam" element={<QuizExam/>} />
+            <Route path="/otp" element={<VerifyOtp/>}/>
             <Route path="/profile-view" element={<ProfleView/>}/>
             <Route path="/doctor-appointment" element={<DoctorApoointment/>} />
             <Route path="/patient-appointment" element={<PatientAppointment/>} />
@@ -98,7 +100,7 @@ function App() {
   </div>
  
   <div className="text-center p-3" style={{"backgroundcolor": "rgba(0, 0, 0, 0.2)"}}>
-    © 2020 Copyright:
+    © 2022 Copyright:
     <Link className="text-white " to="/" style={{"textDecoration":"None"}} > MFW.com</Link>
   </div>
 

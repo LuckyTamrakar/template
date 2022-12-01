@@ -16,7 +16,8 @@ function Register() {
     e.preventDefault();
     const data =new FormData(e.currentTarget);
     let user_captcha = document.getElementById('user_captcha_input').value;
-
+    let pass=data.get('password')
+    let pass2=data.get('password2')
        if (validateCaptcha(user_captcha)===true) {
            loadCaptchaEnginge(6); 
            document.getElementById('user_captcha_input').value = "";
@@ -25,7 +26,7 @@ function Register() {
       name:data.get('name'),
       phone:data.get('phone'),
       password:data.get('password'),
-      password2:data.get('confirm-password'),
+      
       tc:data.get('tc')
     }
     const res = await registerUser(actualData)
@@ -37,10 +38,10 @@ function Register() {
     }
     if(res.data){
       storeToken(res.data.token)
-      navigate('/')
+      navigate('/otp')
     }}
     else{
-      setServerError({"error":"captcha not matches"})
+      setServerError({"error":"captcha not matches","error1":"Password or confirm password is not matched"})
     }
   }
     
@@ -67,6 +68,7 @@ function Register() {
               {server_error.phone ? <Typography style={{fontSize:12,color:'red',paddingLeft:10}} >{server_error.phone[0]}</Typography>:""}
   <TextField margin='normal'required fullwidth="true" id='password' label='Password' name='password' type='password'/>
   <TextField margin='normal' required fullwidth="true" id='confirm-password' label='Confirm Password' name='confirm-password' type='password'/>
+  {server_error.error1 ? <Alert severity='error'>{server_error.error1}</Alert>:""}
   <FormControlLabel required control={<div className="form-check"><input className="form-check-input" name="tc" type="checkbox" value={true} id="flexCheckChecked" />
   <label className="form-check-label" htmlFor="flexCheckChecked">
       I agree to the term and conditions 
