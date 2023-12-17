@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.dabc46c6.js",
+    "static/js/787.80a223a9.chunk.js": "/static/js/787.80a223a9.chunk.js",
+    "static/media/11.jpg": "/static/media/11.c87dec8592b803de8609.jpg",
+    "static/media/34.jpg": "/static/media/34.d569b1ed1d3b8d8a2fd8.jpg",
+    "static/media/mail.jpg": "/static/media/mail.88b728c2bcc0017f090d.jpg",
+    "static/media/3.png": "/static/media/3.d18b3e97d2816f058f6c.png",
+    "static/media/1.png": "/static/media/1.dcda83d40f8e8507d142.png",
+    "static/media/6.png": "/static/media/6.d5d40754666ffe9d7fa7.png",
+    "static/media/verify.jpg": "/static/media/verify.a0a76a9ce7e5c2dde109.jpg",
+    "static/media/5.png": "/static/media/5.c5f5f6680c27dd4ee492.png",
+    "static/media/2.png": "/static/media/2.ffae290f1746744a380d.png",
+    "static/media/edit.png": "/static/media/edit.3a1a9743fe9dc5f87d84.png",
+    "static/media/contact.jpg": "/static/media/contact.13b798d6ec4d62e3e4d2.jpg",
+    "static/media/register.png": "/static/media/register.b62c575036d8514467a1.png",
+    "static/media/Patient_appointment.jpg": "/static/media/Patient_appointment.f9bee7f8018deaf263e4.jpg",
+    "static/media/mfwnews.png": "/static/media/mfwnews.b99068782c287cad142b.png",
+    "static/media/login1.png": "/static/media/login1.c5244ae90cdf329256c8.png",
+    "static/media/forgot.png": "/static/media/forgot.44afcd6d608ed7a3de29.png",
+    "static/media/4.png": "/static/media/4.01516e30ef2a816151cc.png",
+    "static/media/News.jpg": "/static/media/News.ba271e2ce9d38d324b5d.jpg",
+    "static/media/loading.gif": "/static/media/loading.1d60d59f514c29aef487.gif",
+    "static/media/Quiz_exam.jpg": "/static/media/Quiz_exam.037f06812222d199b080.jpg",
+    "static/media/mfwlogo.png": "/static/media/mfwlogo.99a05f86fbc366c910db.png",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.dabc46c6.js.map": "/static/js/main.dabc46c6.js.map",
+    "787.80a223a9.chunk.js.map": "/static/js/787.80a223a9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.dabc46c6.js"
+  ]
+}
