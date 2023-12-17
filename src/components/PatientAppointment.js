@@ -63,9 +63,12 @@ function PatientAppointment() {
     label="Doctor Name"
     
   >
-    <MenuItem value={1}>Dr Lucky</MenuItem>
-    <MenuItem value={2}>Dr Nikhil</MenuItem>
-    <MenuItem value={3}>Dr Himanshi</MenuItem>
+    <MenuItem value={1}>Dr Sohil </MenuItem>
+    <MenuItem value={2}>Dr Himanshi</MenuItem>
+    <MenuItem value={3}>Dr Ashutosh</MenuItem>
+    <MenuItem value={4}>Dr Ajeet</MenuItem>
+    <MenuItem value={5}>Dr Varsha</MenuItem>
+    <MenuItem value={6}>Dr Vandna</MenuItem>
   </Select>
 </FormControl>
               <TextField margin='normal' required fullwidth="true" id='email' name='email' type='email' label='Email Address'/>

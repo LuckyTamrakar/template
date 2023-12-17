@@ -13,10 +13,12 @@ function QuizExam() {
         {access_token ? <></> : <div className="alert alert-danger" role="alert">
 <h4 className="alert-heading">Please Login!</h4>
 <p>If you want to give quiz please login in your account</p>
+
 <hr/>
 <p className="mb-0">If you don't have account. Please Register to give Quiz</p>
 <br/>
 <Link to="/register" className='btn btn-danger'>Register</Link>
+<>  </><Link to="/login" className='btn btn-danger'>Login</Link>
 </div>}</div>
         <div className='container'>
         <div className="row row-cols-1 row-cols-md-3 g-4">

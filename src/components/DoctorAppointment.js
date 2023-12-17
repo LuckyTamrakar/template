@@ -81,11 +81,12 @@ function DoctorApoointment() {
 </div>
         </> : <div className="alert alert-danger border border-light border-2" role="alert">
 <h4 className="alert-heading text-red">Please Login!</h4>
-<p>If you want to give quiz please login in your account</p>
+<p>please login in your account</p>
 <hr/>
 <p className="mb-0">If you don't have account. Please Register to give Quiz</p>
 <br/>
 <Link to="/register" className='btn btn-danger'>Register</Link>
+<>  </><Link to="/login" className='btn btn-danger'>Login</Link>
 </div>}</div><br/>
         <div className='container'>
         
